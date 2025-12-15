@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Didymus Kiprotich — IT Student | Junior Software Developer</title>
+  <meta name="description" content="Diddie029 — IT Student and aspiring Software Developer. Portfolio showcasing projects, skills, education, and a contact form." />
+  <meta name="author" content="Diddie029" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
+  <!-- Preconnect & Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- SEO/OG -->
+  <meta property="og:title" content="Didymus Kiprotich — IT Student | Software Developer" />
+  <meta property="og:description" content="Personal portfolio of an IT student and aspiring software developer. View projects, skills, education and contact information." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Homepage">Diddie029</a>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" data-scroll>Home</a></li>
+          <li><a href="#about" data-scroll>About</a></li>
+          <li><a href="#skills" data-scroll>Skills</a></li>
+          <li><a href="#projects" data-scroll>Projects</a></li>
+          <li><a href="#edu" data-scroll>Education</a></li>
+          <li><a href="#contact" data-scroll>Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile nav toggle -->
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="name">Hi, I'm <span class="accent">Diddie029</span></h1>
+          <p class="role">IT Student | <span id="typed" aria-live="polite"></span></p>
+          <p class="tagline">Building reliable web experiences & learning full-stack development.</p>
+
+          <div class="hero-ctas">
+            <a href="assets\resume.pdf" class="btn" download>Download CV</a>
+            <a href="#projects" class="btn btn-ghost" data-scroll>View Projects</a>
+          </div>
+        </div>
+
+        <!-- Hero illustration / placeholder -->
+        <div class="hero-card" aria-hidden="true">
+          <!-- Simple SVG illustration for fast load -->
+          <svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" class="device-illustration">
+            <rect x="12" y="24" rx="18" ry="18" width="216" height="192" fill="#111" stroke="#222" stroke-width="2"/>
+            <rect x="36" y="48" rx="8" ry="8" width="168" height="120" fill="#0f1720"/>
+            <circle cx="120" cy="180" r="6" fill="#2563eb"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <!-- Profile Picture -->
+          <div class="profile-picture">
+            <img src="assets/profile.jpg" alt="Didymus Kiprotich - Profile Picture" />
+          </div>
+
+          <div class="about-bio">
+            <p>
+              I'm an IT student with a passion for software development, problem solving, and building tools that help users
+              accomplish tasks efficiently. I enjoy learning new technologies and working on full-stack web projects.
+            </p>
+            <p>
+              Career goals: become a strong backend developer, contribute to open source, and build scalable applications.
+            </p>
+            <p class="small">
+              Quick facts: comfortable with windows,Linux, basic networking, SQL, PHP, and modern JavaScript. Currently learning Node.js and
+              cloud fundamentals.
+            </p>
+          </div>
+
+          <div class="about-details">
+            <ul>
+              <li><strong>Location:</strong> Mombasa, KENYA</li>
+              <li><strong>Email:</strong> <a href="mailto:kiprotichsawe99@gmail.com">kiprotichsawe99@gmail.com</a></li>
+              <li><strong>Availability:</strong> Open to internships & freelance ,Remote Tasks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <p class="section-sub">Technical skills and proficiencies. Percentages are indicative and customizable.</p>
+
+        <div class="skills-grid">
+          <!-- Each skill uses an accessible progress bar -->
+          <div class="skill">
+            <div class="skill-head">
+              <div class="skill-icon" aria-hidden="true">
+                <!-- small HTML5 SVG -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff"><path d="M3 3h18v18H3z" stroke="#1f2937"/></svg>
+              </div>
+              <h3>HTML</h3>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+              <div class="skill-fill" style="width:90%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <div class="skill-icon" aria-hidden="true">
+                <!-- CSS icon -->
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 3h16l-1.6 18.4L12 21 5.6 21 4 3z" fill="#1f2937"/></svg>
+              </div>
+              <h3>CSS</h3>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
+              <div class="skill-fill" style="width:85%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <div class="skill-icon" aria-hidden="true">
+                <!-- JS icon -->
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 3h18v18H3z" fill="#1f2937"/></svg>
+              </div>
+              <h3>JavaScript</h3>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+              <div class="skill-fill" style="width:75%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <div class="skill-icon" aria-hidden="true">
+                <!-- PHP icon (stylized) -->
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M2 12c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10-10 10S2 17.5 2 12z" fill="#111827"/></svg>
+              </div>
+              <h3>PHP</h3>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
+              <div class="skill-fill" style="width:65%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M2 2h20v20H2z" fill="#111827"/></svg>
+              </div>
+              <h3>SQL</h3>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+              <div class="skill-fill" style="width:70%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 3h18v18H3z" fill="#111827"/></svg>
+              </div>
+              <h3>Networking (Basics)</h3>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+              <div class="skill-fill" style="width:60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">A selection of projects showcasing technologies and solutions I've built.</p>
+
+        <!-- Filters -->
+        <div class="project-filters" role="toolbar" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="database">Database</button>
+        </div>
+
+        <!-- Projects grid -->
+        <div id="projects-grid" class="projects-grid">
+          <!-- Project cards are generated by JS for easy customization -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section id="edu" class="section edu">
+      <div class="container">
+        <h2 class="section-title">Education & Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">2022 — Present</div>
+            <div class="timeline-content">
+              <h3>Information Technology Student -Technical University of Mombasa</h3>
+              <p>Pursuing a degree in Information Technology. Relevant coursework: Data Structures, Networking, Databases, Web Development.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">2024 — Internship</div>
+            <div class="timeline-content">
+              <h3>Intern — Swahili Pot Hub</h3>
+              <p>Assisted with website updates, bug fixes, and wrote basic PHP scripts to automate administrative tasks.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">Have a project or opportunity? Send a message and I'll get back to you.</p>
+
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" novalidate>
+            <label>
+              <span class="label">Name</span>
+              <input type="text" name="name" id="name" required placeholder="Your full name" />
+            </label>
+
+            <label>
+              <span class="label">Email</span>
+              <input type="email" name="email" id="email" required placeholder="you@example.com" />
+            </label>
+
+            <label>
+              <span class="label">Message</span>
+              <textarea name="message" id="message" rows="6" required placeholder="Write your message..."></textarea>
+            </label>
+
+            <!-- Form action: by default, this demo uses mailto fallback.
+                 For production, replace with a backend endpoint or Formspree/Netlify Forms. -->
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <span id="form-status" class="form-status" aria-live="polite"></span>
+            </div>
+          </form>
+
+          <aside class="contact-card">
+            <h3>Connect</h3>
+            <p>Find me on GitHub or LinkedIn — or send an email directly.</p>
+
+            <ul class="social-links">
+              <li><a href="https://github.com/Diddie029" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+              <li><a href="www.linkedin.com/in/kiprotich-sawe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+              <li><a href="mailto:kiprotichsawe99@gmail.com" aria-label="Email">Email</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Diddie029 — Built with HTML, CSS & JS.</p>
+
+      <div class="footer-links">
+        <a href="#home" data-scroll>Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top" title="Back to top">↑</button>
+
+  <!-- Main JS -->
+  <script src="script.js" defer></script>
+</body>
+</html>

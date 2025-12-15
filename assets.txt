@@ -1,0 +1,3 @@
+Please add your real CV/Resume PDF to this path: assets/resume.pdf
+- Current repository includes a placeholder reference only.
+- Name the file 'resume.pdf' or update the link in index.html's Download CV button.
