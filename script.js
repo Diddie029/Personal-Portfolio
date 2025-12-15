@@ -42,6 +42,14 @@ const PROJECTS = [
     tech: ["database", "sql"],
     github: "https://github.com/Diddie029/library-db",
     demo: "#"
+  },
+  {
+    id: "p5",
+    title: "UniConnect - Collaboration Platform",
+    desc: "An integrated collaboration learning platform for university students. Features virtual study groups, online working labs, and real-time collaboration tools for seamless team learning.",
+    tech: ["web", "backend", "javascript"],
+    github: "https://github.com/Diddie029/uniconnect",
+    demo: "#"
   }
 ];
 

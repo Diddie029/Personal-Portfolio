@@ -164,6 +164,15 @@ body{
 }
 .hero-card:hover{ transform:translateY(-8px) }
 
+/* Animated dots in SVG */
+@keyframes pulse-dot {
+  0%, 100% { r:3; opacity:1 }
+  50% { r:6; opacity:0.5 }
+}
+.dot-animate {
+  animation:pulse-dot 2s ease-in-out infinite;
+}
+
 /* Sections */
 .section{ padding:3rem 0 }
 .section-title{
@@ -188,12 +197,24 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
+  width:200px;
+  height:280px;
+  transition:box-shadow var(--transition), transform var(--transition);
+  cursor:pointer;
+}
+.profile-picture:hover{
+  box-shadow:0 0 30px rgba(37,99,235,0.6), 0 0 60px rgba(37,99,235,0.3);
+  transform:scale(1.02);
 }
 .profile-picture img{
   width:100%;
   height:100%;
   object-fit:cover;
   display:block;
+  transition:filter var(--transition);
+}
+.profile-picture:hover img{
+  filter:grayscale(100%) brightness(1.1);
 }
 .about-bio p{ margin:0 0 0.9rem 0 }
 .about-details ul{ list-style:none; padding:0; margin:0; color:var(--muted) }
@@ -230,6 +251,46 @@ body{
   background:linear-gradient(90deg, var(--accent), #7c3aed);
   border-radius:inherit;
   transition:width 900ms cubic-bezier(.2,.9,.2,1);
+}
+
+/* Hobbies */
+.hobbies-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0.7rem;
+}
+.hobby-card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:0.75rem;
+  border-radius:12px;
+  text-align:center;
+  transition:all var(--transition);
+  border:1px solid rgba(255,255,255,0.05);
+}
+.hobby-card:hover{
+  transform:translateY(-4px);
+  background:linear-gradient(180deg, rgba(37,99,235,0.1), rgba(37,99,235,0.05));
+  border-color:rgba(37,99,235,0.3);
+  box-shadow:0 6px 16px rgba(37,99,235,0.15);
+}
+.hobby-icon{
+  font-size:1.8rem;
+  margin-bottom:0.4rem;
+  display:inline-block;
+  transition:transform var(--transition);
+}
+.hobby-card:hover .hobby-icon{
+  transform:scale(1.15) rotate(10deg);
+}
+.hobby-card h3{
+  margin:0.3rem 0;
+  font-size:0.95rem;
+  font-weight:700;
+}
+.hobby-card p{
+  margin:0.3rem 0 0 0;
+  font-size:0.85rem;
+  color:var(--muted);
 }
 
 /* Projects */
@@ -297,7 +358,66 @@ body{
 /* Contact card */
 .contact-card{ background:rgba(255,255,255,0.02); padding:1rem; border-radius:12px }
 .social-links{ list-style:none; padding:0; margin:0; display:flex; gap:0.6rem; flex-direction:column }
-.social-links a{ color:var(--accent); text-decoration:none; font-weight:700 }
+.social-links a{ 
+  color:var(--accent); 
+  text-decoration:none; 
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  transition:all var(--transition);
+  position:relative;
+}
+.social-links a::before{
+  content:'';
+  width:20px;
+  height:20px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.1rem;
+}
+.social-links a.github-icon::before{ content:'🔗' }
+.social-links a.linkedin-icon::before{ content:'in' }
+.social-links a.email-icon::before{ content:'✉️' }
+.social-links a.whatsapp-icon::before{ content:'💬' }
+.social-links a:hover{
+  background:rgba(37,99,235,0.15);
+  transform:translateX(8px);
+  box-shadow:0 4px 12px rgba(37,99,235,0.2);
+}
+.social-links a:active{
+  transform:scale(0.98);
+}
+
+/* Icon-specific animations */
+@keyframes float {
+  0%, 100% { transform:translateY(0px) }
+  50% { transform:translateY(-4px) }
+}
+.social-links a.github-icon{
+  animation:float 3s ease-in-out infinite;
+}
+.social-links a.linkedin-icon{
+  animation:float 3.5s ease-in-out 0.5s infinite;
+}
+.social-links a.email-icon{
+  animation:float 4s ease-in-out 1s infinite;
+}
+.social-links a.whatsapp-icon{
+  animation:float 3s ease-in-out 1.5s infinite;
+}
+
+@keyframes slideIn {
+  0% { opacity:0; transform:translateX(-20px) }
+  100% { opacity:1; transform:translateX(0) }
+}
+.social-links li:nth-child(1) { animation:slideIn 0.5s ease-out }
+.social-links li:nth-child(2) { animation:slideIn 0.5s ease-out 0.1s both }
+.social-links li:nth-child(3) { animation:slideIn 0.5s ease-out 0.2s both }
+.social-links li:nth-child(4) { animation:slideIn 0.5s ease-out 0.3s both }
 
 /* Footer */
 .site-footer{ border-top:1px solid rgba(255,255,255,0.03); padding:1.2rem 0; margin-top:2rem }
@@ -325,6 +445,7 @@ body{
 @media (min-width:700px){
   .about-grid{ grid-template-columns:280px 1fr }
   .skills-grid{ grid-template-columns:repeat(2,1fr) }
+  .hobbies-grid{ grid-template-columns:repeat(2,1fr) }
   .projects-grid{ grid-template-columns:repeat(2,1fr) }
   .contact-grid{ grid-template-columns:1fr 320px }
   .timeline-item{ gap:2rem }
