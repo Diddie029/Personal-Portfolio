@@ -13,19 +13,19 @@
 const PROJECTS = [
   {
     id: "p1",
-    title: "TaskMaster (Todo App)",
-    desc: "A responsive todo app with local storage and filtering. Built with vanilla JS, HTML and CSS.",
-    tech: ["web", "javascript"],
-    github: "https://github.com/Diddie029/taskmaster",
-    demo: "#"
+    title: "PlaceME-Hub",
+    desc: "Open Industrial Linkage System using HTML, CSS, JavaScript, PHP, and SQL to connect university students with internship and attachment opportunities.",
+    tech: ["web", "PHP" ,"Javascript"],
+    github: "https://github.com/Diddie029/PlaceME-Hub-",
+    demo: "https://github.com/Diddie029/PlaceME-Hub-"
   },
   {
     id: "p2",
-    title: "Student Portal (PHP + MySQL)",
-    desc: "A simple student portal with authentication, CRUD operations built using PHP and MySQL.",
-    tech: ["backend", "database", "php"],
-    github: "https://github.com/Diddie029/student-portal",
-    demo: "#"
+    title: "Real-Time-Brute-Force-Attack-Detector",
+    desc: "A system that monitors login attempts, detects brute-force attacks, logs them, and auto-blocks IPs.",
+    tech: ["backend", "database", "Python"],
+    github: "https://github.com/Diddie029/Real-Time-Brute-Force-Attack-Detector",
+    demo: "https://github.com/Diddie029/Real-Time-Brute-Force-Attack-Detector"
   },
   {
     id: "p3",
