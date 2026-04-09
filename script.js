@@ -45,11 +45,11 @@ const PROJECTS = [
   },
   {
     id: "p5",
-    title: "UniConnect - Collaboration Platform",
+    title: "Unikonnect - Collaboration Platform for university students",
     desc: "An integrated collaboration learning platform for university students. Features virtual study groups, online working labs, and real-time collaboration tools for seamless team learning.",
     tech: ["web", "backend", "javascript"],
-    github: "https://github.com/Diddie029/uniconnect",
-    demo: "#"
+    github: "https://github.com/Diddie029/unikonnect-hub",
+    demo: "https://unikonnect-hub.vercel.app/"
   }
 ];
 
