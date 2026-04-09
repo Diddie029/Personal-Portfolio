@@ -37,11 +37,11 @@ const PROJECTS = [
   },
   {
     id: "p4",
-    title: "Library DB Design",
-    desc: "Database design and normalization exercises with complex queries and stored procedures (SQL).",
-    tech: ["database", "sql"],
-    github: "https://github.com/Diddie029/library-db",
-    demo: "#"
+    title: "Telephone Billing management system",
+    desc: "This is a Telephone Billing management system built using python,Allows service providers to track their expenditures of their customers.",
+    tech: ["App", "Python"],
+    github: "https://github.com/Diddie029/Telephone-Billing-management-system-",
+    demo: "https://github.com/Diddie029/Telephone-Billing-management-system-"
   },
   {
     id: "p5",
